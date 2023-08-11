@@ -1,0 +1,129 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(/Classwork/projectTwo/bg-intro-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.sidebar {
+    flex-direction: column;
+    margin: 50px;
+    color: white;
+
+}
+
+.trybutton {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+}
+
+form {
+    width: 400px;
+    height: auto;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: -0px 0px 17px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 1px 17px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 17px -3px rgba(0, 0, 0, 0.75);
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px 10px;
+    border: 0.5px solid #c0c0c0;
+    font-size: 14px;
+}
+
+form button {
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    transition: 0.5s ease;
+
+}
+
+form button:hover {
+    background-color: hsl(154, 100%, 15%);
+    /* padding: ; */
+}
+
+form p {
+    text-align: center;
+    font-size: 0.5em;
+}
+
+form a {
+    text-decoration: none;
+    color: red;
+    font-size: 10px;
+}
+
+form ::placeholder {
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        background-image: url(/Classwork/projectTwo/bg-intro-mobile.png);
+        height: 100vh;
+        margin: 0;
+    }
+
+    .trybutton {
+        width: 100%;
+        justify-content: center;
+        font-size: 15px;
+
+
+    }
+
+    form {
+        width: 300px;
+        justify-content: center;
+
+    }
+
+    form p {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    form a {
+        text-decoration: none;
+        color: red;
+        font-size: 15px;
+    }
+}
